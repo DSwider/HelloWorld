@@ -38,87 +38,67 @@ div {
 	width: 100%;
 	height: 100%;
 }
-
-$MAX_WIDTH: 500px;
-
-.popup-ui {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 7777;
-  opacity: 0;
-  visibility: hidden;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  transition: all 0.2s ease-in-out;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-
-  .popup-ui-wrapper {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    text-align: left;
-
-    .popup-ui-content {
-      position: relative;
-      background: #FFF;
-      padding: 0;
-      width: auto;
-      margin: 0 auto;
-      opacity: 0;
-      visibility: hidden;
-      border: solid 5px #FFF;
-      max-width: $MAX_WIDTH;
-
-      transition: all 0.2s ease-in-out;
-      transform: scale(0.8);
-      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  &.show {
-    opacity: 1;
-    visibility: visible;
-
-    .popup-ui-content {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-    }
-  }
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
 }
 
-
-
-// My-Content
-.my-content {
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  h3 {
-    padding: 0 10px;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-  p {
-    padding: 0 10px;
-    font-size: 0.9em;
-  }
+.popup .content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:500px;
+  height:250px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
 }
 
-// My Button
-#btnpopup {
-  display: block;
-  margin: 2em auto 0 auto;
-  width: 200px;
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+button {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:15px;
+  font-size:18px;
+  border:2px solid #222;
+  color:#222;
+  text-transform:uppercase;
+  font-weight:600;
+  background:#fff;
 }
