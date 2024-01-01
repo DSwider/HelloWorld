@@ -31,7 +31,7 @@ p {
   	text-align: center;
 }
 
-div.main {
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -57,7 +57,7 @@ div.main {
   transform:translate(-50%,-50%) scale(0);
   background:#fff;
   width:500px;
-  height:250px;
+  height:auto;
   z-index:2;
   text-align:center;
   padding:20px;
