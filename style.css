@@ -25,4 +25,5 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position:relative;font-size:2.2em;font-family: 'Roboto', sans-serif;font-weight:900;
-  text-align: center;}
+  text-align: center;
+}
