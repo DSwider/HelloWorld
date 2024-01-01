@@ -31,7 +31,7 @@ p {
   	text-align: center;
 }
 
-div {
+div.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
