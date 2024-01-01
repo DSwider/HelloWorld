@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900');
+@import url('href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
 body{
-  background-color: #ff7900;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 p {
   background-image: -moz-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
@@ -10,5 +24,5 @@ p {
   background-image: linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position:relative;font-size:1.2em;font-family: 'Yantramanav', sans-serif;font-weight:900;
+  position:relative;font-size:2.2em;font-family: 'Roboto', sans-serif;font-weight:900;
   text-align: center;}
