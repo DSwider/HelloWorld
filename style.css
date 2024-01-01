@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900');
+body{
+  background-color: #ff7900;
+}
 p {
   background-image: -moz-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
   background-image: -webkit-linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
@@ -7,4 +10,5 @@ p {
   background-image: linear-gradient(top,#b8b0af 0%,#f2ecea 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position:relative;font-size:1.2em;font-family: 'Yantramanav', sans-serif;font-weight:900;text-align: center;}
+  position:relative;font-size:1.2em;font-family: 'Yantramanav', sans-serif;font-weight:900;
+  text-align: center;}
