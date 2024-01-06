@@ -47,7 +47,6 @@ p {
   top:50%;
   left:50%;
   transform:translate(-50%,-50%) scale(0);
-  background:#fff;
   width:auto;
   height:auto;
   z-index:2;
@@ -55,6 +54,10 @@ p {
   padding:20px;
   box-sizing:border-box;
   font-family:"Open Sans",sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: auto;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .popup .close-btn {
